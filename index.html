@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6bf1ed113f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3 id="name">INNOCENT.</h3>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#elevator-pitch">Elevator pitch</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Innocent Kananga</h1><br>
+                <p>Aspiring data scientist and full-stack developer</p>
+            </div>
+        </div>
+    </div>
+<!---------------------bio-------------------------->
+
+    <div id="bio">
+        <div class="container">
+            <div class="row">
+                <div class="bio-col-1">
+                    <img src="images/background.jpg">
+                </div>
+                <div class="bio-col-2">
+                    <h1 class="sub-title-1">About Me</h1><br>
+                    <p>I'm an enthusiastic and driven student with a passion for data science and full-stack development, with a keen eye for detail and a love for problem-solving. My educational pursuits have equipped me with a solid foundation in the field, and I'm constantly honing my skills through hands-on projects and continuous learning.</p><br>
+                    <p>Skills to be acquired:</p><br>
+                    <div class="container">
+                        <div class="bio-skill-1">
+                            <h2>Full Stack</h2><br>
+                            <p>HTML, CSS, Javascript, React, Node JS, Express, MongoDB, Mongoose.</p><br>
+                        </div>
+                        <div class="bio-skill-2">
+                            <h2>Data Science</h2><br>
+                            <p>Statistics and probability, Spreadsheets, SQL, Python, Power BI, Machine Learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------Portfolio--------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="portfolio-col-1">
+                    <img src="images/Project.png">
+                </div>
+                <div class="portfolio-col-2">
+                    <h1 class="sub-title-2">OUR TEAM PROJECT</h1><br>
+                    <p>This is a transformative digital solution poised to tackle the pressing issue of youth unemployment in Rwanda. Our platform is more than just a job matching system; it's a catalyst for change, empowering young talents to take a leap towards fulfilling careers. Through cutting-edge technology and innovative algorithms, Job Leap connects aspiring individuals with opportunities that align with their skills, passions, and aspirations. We believe in bridging the gap between talent and employers, fostering a vibrant ecosystem where potential meets possibility.</p><br>
+                    <div class="container">
+                        <div class="portfolio-link-1">
+                            <h2>Slide deck presentation</h2><br>
+                            <a href="https://drive.google.com/file/d/1tERRwgJz7rfpcCsNQ0Cz6GeHpt8mzuK3/view?usp=sharing">Slide deck link</a>
+                        </div><br>
+                        <div class="portfolio-link-2">
+                            <h2>Youtube presentation</h2><br>
+                            <a href="https://youtu.be/jPSYLrU8xmQ">Youtube Link</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+<!---------Elevator pitch------------>
+
+    <div id="elevator-pitch">
+        <h1>ELEVATOR PITCH</h1><br><br>
+        <p>My name is Innocent Kananga and I am currently a student at ALX Africa pursuing data
+            science, with a background in healthcare. I have recently
+            discovered a great passion for technology and I aim at bridging the gap between my skills in
+            software development and data science with solving concerning problems affecting our
+            societies.<br><br>
+            My top three skills are leadership, critical thinking and initiative. I excel in working as a team
+            and individually to achieve our goals, analyze complex problems and take proactive steps to
+            drive meaningful results. What makes me stand out is my creativity and love for problem-solving that gives me an advantage to better decision making and finding
+            solutions that bridge the gap between technology and concerning global problems.<br><br>
+            By hiring me, employees will gain a dedicated and capable data scientist who can leverage
+            data to optimize business processes. My ask from the audience is to connect me with
+            opportunities where I can apply my data science and software development skills to solve problems affecting our communities and other people globally. Whether it is
+            a project, internship, or full-time role, I am always interested as I am eager to learn and grow.<br><br>
+            Together, we can use technology to craft effective solutions through the power of data and innovation.
+            I am excited to bring my passion, expertise, and drive to the table and make a lasting impact.</p>
+    </div><br><br><br><br><br><br>
+
+    <!---------contact------------------------------------->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title-3">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> innocentkmalvin0@gmail.com</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form><br>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Innocent.</p>
+        </div>
+    </div>
+    
+    <script>
+
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz1FtZqsOIQIIGYllQjcLd28DOQLCpH2gu4OBN-Pyxtl_5jQOwEYw0wCq3_BBqAgJesDw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
