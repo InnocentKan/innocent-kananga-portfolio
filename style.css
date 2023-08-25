@@ -156,6 +156,14 @@ nav ul li a:hover::after {
     justify-content: center;
 }
 
+#elevator-link {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2626;
+        font-size: 40px;
+}
+
 /*-------------contact----------------*/
 
 .contact-left {
